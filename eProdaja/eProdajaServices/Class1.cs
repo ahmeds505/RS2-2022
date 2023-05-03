@@ -1,4 +1,4 @@
-﻿namespace eProdajaServices
+﻿namespace eProdaja.Services
 {
     public class Class1
     {
