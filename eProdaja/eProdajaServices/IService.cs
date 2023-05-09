@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace eProdaja.Services
 {
-    public interface IKorisniciService 
+    public interface IService<T, TSearch> where T : class where TSearch : class 
     {
-        IEnumerable<Model.Korisnici> Get();
+        IEnumerable<T> Get(TSearch search = null);
+        T GetById(int id);
     }
 }
